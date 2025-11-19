@@ -1,0 +1,17 @@
+Diagram placeholder: generate using description or mermaid code
+
+Mermaid Example:
+
+graph TD
+    A[User] --> B[Terraform CLI]
+    B --> C[VPC]
+    C --> D[Subnet(s)]
+    C --> E[Route Table(s)]
+    C --> F[Internet Gateway]
+    B --> G[Security Group]
+    B --> H[EC2 Instances]
+    H --> I[Key Pair for SSH]
+    I --> J[Ansible]
+    J --> K[Install Apache]
+    J --> L[Deploy index.html]
+    A --> M[Browser access via EC2 Public IP]
