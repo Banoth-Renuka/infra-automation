@@ -18,7 +18,7 @@ This project demonstrates **end-to-end AWS infrastructure provisioning and confi
    - Deploys custom `index.html`
 
 3. **Browser Access**
-   - Open: `http://<EC2_PUBLIC_IP>`
+   - Open: `http://13.127.248.144
 
 ---
 
