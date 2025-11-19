@@ -1,4 +1,18 @@
 - hosts: webservers
   become: yes
-  roles:
-    - apache
+  tasks:
+    - name: Install Apache
+      yum:
+        name: httpd
+        state: present
+
+    - name: Start Apache service
+      service:
+        name: httpd
+        state: started
+        enabled: yes
+
+    - name: Deploy custom index.html
+      copy:
+        content: "<h1>Hello from Ansible + Apache on Amazon Linux!</h1>"
+        dest: /var/www/html/index.html
