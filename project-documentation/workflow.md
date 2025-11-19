@@ -30,7 +30,7 @@ ansible-playbook -i inventory.ini apache.yml
 - Deploy custom index.html
 
 ## 4️⃣ Access via Browser
-http://<EC2_PUBLIC_IP>
+http://13.127.248.144
 
 ## 5️⃣ Destroy Infrastructure (optional)
 ```
